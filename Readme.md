@@ -1,7 +1,10 @@
 #INSTRUCTIONS
 
-
+~~~
 git clone https://github.com/albertoCaroM/dotzsh.git  ~/.dotzsh 
+cd ~/.dotzsh 
+git submodule update --init --recursive 
+~~~
 
 ###enable fzf   CTRl-T CTRL-R ALT-C whith steroids
 ~~~
