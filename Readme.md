@@ -1,7 +1,7 @@
 #INSTRUCTIONS
 
 
-git clone https://github.com/albertoCaroM/gotzsh.git  ~/.dotzsh 
+git clone https://github.com/albertoCaroM/dotzsh.git  ~/.dotzsh 
 
 ###enable fzf   CTRl-T CTRL-R ALT-C whith steroids
 ~~~
@@ -19,5 +19,7 @@ Now edit and customize ~/.machinerc
 
 
 ### link ~/.dotzsh/zshrc
+~~~
 mv ~/.zshrc ~/.zshrc.old 
 ln -s ~/.dotzsh/zshrc ~/.zshrc 
+~~~
