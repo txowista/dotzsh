@@ -1,0 +1,6 @@
+[submodule "zgen"]
+	path = zgen
+	url = https://github.com/tarjoilija/zgen
+[submodule "fzf"]
+	path = fzf
+	url = https://github.com/junegunn/fzf.git
