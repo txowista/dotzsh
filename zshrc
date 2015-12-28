@@ -62,7 +62,6 @@ if [ ! $TERM = dumb  ]; then
 
     # list of plugins from zsh I use
     # see https://github.com/robbyrussell/oh-my-zsh/wiki/Plugins
-    zgen oh-my-zsh plugins/colored-man
     zgen oh-my-zsh plugins/docker
     zgen oh-my-zsh plugins/git
     zgen oh-my-zsh plugins/gitfast
@@ -75,6 +74,10 @@ if [ ! $TERM = dumb  ]; then
     zgen oh-my-zsh plugins/command-not-found
     zgen oh-my-zsh plugins/tmux
     zgen oh-my-zsh plugins/tmuxinator
+    zgen oh-my-zsh plugins/vi-mode
+    zgen oh-my-zsh plugins/vagrant
+    zgen oh-my-zsh plugins/colored-man-pages
+
 
     # https://github.com/Tarrasch/zsh-autoenv
     #    zgen load Tarrasch/zsh-autoenv
