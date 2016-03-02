@@ -74,7 +74,7 @@ if [ ! $TERM = dumb  ]; then
     zgen oh-my-zsh plugins/command-not-found
     zgen oh-my-zsh plugins/tmux
     zgen oh-my-zsh plugins/tmuxinator
-    zgen oh-my-zsh plugins/vi-mode
+#    zgen oh-my-zsh plugins/vi-mode
     zgen oh-my-zsh plugins/vagrant
     zgen oh-my-zsh plugins/colored-man-pages
 
