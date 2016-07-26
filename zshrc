@@ -102,8 +102,9 @@ if [ ! $TERM = dumb  ]; then
     #
     # To accept the autosuggestion (replacing the command line contents), hit End, Alt+F, Ctrl+F, or any other key that moves the cursor to the right
 
-        zgen load caiogondim/bullet-train-oh-my-zsh-theme bullet-train
-    ZSH_THEME="bullet-train" 
+
+    zgen oh-my-zsh themes/takashiyoshida
+    ZSH_THEME= "takashiyoshida"
     zgen save
   fi
 
