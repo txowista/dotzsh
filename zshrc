@@ -11,6 +11,11 @@ fi
 path=($path
 /usr/local/{bin,sbin}
 )
+
+[ -d /opt/local/bin ] &&  export PATH=$PATH:/opt/local/bin
+[ -d /opt/local/sbin ] &&  export PATH=$PATH:/opt/local/sbin
+
+
 typeset -U path
 
 COMPLETION_WAITING_DOTS="true"
@@ -25,6 +30,11 @@ export CLICOLOR=1
 #256 color for vim in tmux
 TERM=xterm-256color
 
+
+# specific for machine configuration 
+if [ -f ~/.machinerc  ]; then
+  source ~/.machinerc
+fi
 
 
 # ssh
@@ -110,11 +120,6 @@ if [ ! $TERM = dumb  ]; then
 
 fi
 
-# specific for machine configuration 
-if [ -f ~/.machinerc  ]; then
-  source ~/.machinerc
-fi
-
 
 # additional configuration for zsh
 # Remove the history (fc -l) command from the history list when invoked.
@@ -124,9 +129,11 @@ setopt histreduceblanks
 # Do not exit on end-of-file. Require the use of exit or logout instead.
 setopt ignoreeof
 # Print the exit value of programs with non-zero exit status.
-setopt printexitvalue
-# Do not share history
-setopt no_share_history
+#setopt printexitvalue
+#  share history
+setopt appendhistory
+setopt sharehistory
+setopt incappendhistory
 
 
 
