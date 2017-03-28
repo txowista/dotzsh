@@ -1,12 +1,19 @@
-#INSTRUCTIONS
+# INSTRUCTIONS
 
+choose auto or manual configuration no both.
+
+## Auto-configuration
+
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/albertoCaroM/dotzsh/master/configure.sh)"
+
+## Manual-configuration
 ~~~
 git clone https://github.com/albertoCaroM/dotzsh.git  ~/.dotzsh 
 cd ~/.dotzsh 
 git submodule update --init --recursive 
 ~~~
 
-###enable fzf   CTRl-T CTRL-R ALT-C whith steroids
+### enable fzf   CTRl-T CTRL-R ALT-C whith steroids
 ~~~
   ln -s ~/.dotzsh/fzf ~/.fzf  
   ~/.fzf/install
