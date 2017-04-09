@@ -4,11 +4,11 @@ choose auto or manual configuration no both.
 
 ## Auto-configuration
 
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/albertoCaroM/dotzsh/master/configure.sh)"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/txowista/dotzsh/master/configure.sh)"
 
 ## Manual-configuration
 ~~~
-git clone https://github.com/albertoCaroM/dotzsh.git  ~/.dotzsh 
+git clone https://github.com/txowista/dotzsh.git
 cd ~/.dotzsh 
 git submodule update --init --recursive 
 ~~~
