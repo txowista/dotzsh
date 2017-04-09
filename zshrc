@@ -13,6 +13,8 @@ path=($path
 )
 
 [ -d /opt/local/bin ] &&  export PATH=$PATH:/opt/local/bin
+[ -d /home/igor/android-ndk-r10e ] &&  export PATH=$PATH:/home/igor/android-ndk-r10e
+[ -d /home/igor/android-sdk-linux_r24 ] &&  export PATH=$PATH:/home/igor/android-sdk-linux_r24/platform-tools:/home/igor/android-sdk-linux_r24/tools
 [ -d /opt/local/sbin ] &&  export PATH=$PATH:/opt/local/sbin
 
 
@@ -81,12 +83,13 @@ if [ ! $TERM = dumb  ]; then
     zgen oh-my-zsh plugins/gitignore
     zgen oh-my-zsh plugins/sudo
     zgen oh-my-zsh plugins/dirhistory
-#    zgen oh-my-zsh plugins/command-not-found
+    zgen oh-my-zsh plugins/command-not-found
     zgen oh-my-zsh plugins/tmux
     zgen oh-my-zsh plugins/tmuxinator
 #    zgen oh-my-zsh plugins/vi-mode
     zgen oh-my-zsh plugins/vagrant
     zgen oh-my-zsh plugins/colored-man-pages
+    zgen oh-my-zsh plugins/cp
 
 
     # https://github.com/Tarrasch/zsh-autoenv
@@ -144,6 +147,31 @@ setopt incappendhistory
 if $PROFILING; then
   zprof
 fi
-
+# -------------------------------------------------------------------
+# # Git aliases
+# # -------------------------------------------------------------------
+#
+alias ga='git add -A'
+alias gp='git push'
+alias gl='git log'
+alias gl='git log'
+alias gs='git status'
+alias gss='git status -s'
+alias gd='git diff'
+alias gcm='git commit -m'
+alias gcma='git commit -am'
+alias gca='git commit -a --verbose'
+alias gwip='git commit -am "WIP"'
+alias ghist = 'git log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=shor'
+alias gbr='git branch'
+alias gco='git checkout'
+alias gcob='git checkout -b'
+alias gra='git remote add'
+alias grr='git remote rm'
+alias gpu='git pull'
+alias gcl='git clone'
+alias gta='git tag -a -m'
+alias gf='git reflog'
+alias gmg='git merge --no-ff'
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
